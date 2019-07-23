@@ -16,6 +16,9 @@ class App extends React.Component {
         const users = await res.json()
         console.log(users)
         this.setState({ users })
+
+        const res2 = await fetch('/users/12345')
+        console.log(await res2.json())
     }
     
     render = () => {

@@ -9,4 +9,10 @@ router.get('/', function(req, res, next) {
 	])
 })
 
+router.get('/:uid', function(req, res, next) {
+	res.json([
+		req.param.uid
+	])
+})
+
 module.exports = router;
